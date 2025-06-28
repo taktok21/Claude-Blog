@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="article-title">記事タイトル - さわやかブログ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1><a href="index.html">さわやかブログ</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">ホーム</a></li>
+                <li><a href="index.html#about">プロフィール</a></li>
+                <li><a href="index.html#blog">ブログ</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="article-main">
+        <article class="article-container">
+            <div class="article-header">
+                <div class="breadcrumb">
+                    <a href="index.html">ホーム</a> > <a href="index.html#blog">ブログ</a> > <span id="breadcrumb-title">記事タイトル</span>
+                </div>
+                <h1 id="main-title" class="article-title">記事タイトル</h1>
+                <div class="article-meta">
+                    <span id="article-date" class="article-date">2024年12月27日</span>
+                    <div class="article-tags">
+                        <span class="tag" id="article-tag">ライフスタイル</span>
+                    </div>
+                </div>
+                <div class="article-hero-image">
+                    <img id="hero-image" src="" alt="" class="hero-img">
+                </div>
+            </div>
+
+            <div class="article-content" id="article-body">
+                <p>記事の内容がここに表示されます。</p>
+            </div>
+
+            <div class="article-footer">
+                <div class="share-buttons">
+                    <h3>この記事をシェア</h3>
+                    <div class="share-links">
+                        <button class="share-btn twitter" onclick="shareOnTwitter()">Twitter</button>
+                        <button class="share-btn facebook" onclick="shareOnFacebook()">Facebook</button>
+                        <button class="share-btn line" onclick="shareOnLine()">LINE</button>
+                    </div>
+                </div>
+                
+                <div class="back-to-blog">
+                    <a href="index.html#blog" class="back-btn">← ブログ一覧に戻る</a>
+                </div>
+            </div>
+        </article>
+
+        <aside class="related-articles">
+            <h3>関連記事</h3>
+            <div class="related-grid">
+                <div class="related-card">
+                    <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=200&h=120&fit=crop&auto=format&q=80" alt="関連記事" class="related-img">
+                    <div class="related-content">
+                        <h4>冬の散歩で見つけた小さな幸せ</h4>
+                        <span class="related-date">2024年12月25日</span>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=200&h=120&fit=crop&auto=format&q=80" alt="関連記事" class="related-img">
+                    <div class="related-content">
+                        <h4>シンプルライフを始めて変わったこと</h4>
+                        <span class="related-date">2024年12月23日</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 さわやかブログ. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="article.js"></script>
+</body>
+</html>

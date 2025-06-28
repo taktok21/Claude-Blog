@@ -92,19 +92,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    const readMoreLinks = document.querySelectorAll('.read-more');
-    readMoreLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
+    const blogCards = document.querySelectorAll('.blog-card');
+    blogCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                return;
+            }
             
-            const card = this.closest('.blog-card');
-            card.style.transform = 'scale(1.02)';
-            
-            setTimeout(() => {
-                card.style.transform = 'translateY(-5px)';
-            }, 200);
-            
-            console.log('記事を読む機能は開発中です');
+            const readMoreLink = this.querySelector('.read-more');
+            if (readMoreLink) {
+                window.location.href = readMoreLink.href;
+            }
         });
     });
 });
